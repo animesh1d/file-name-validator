@@ -8,6 +8,6 @@
 6. FilenamevalidatorApplicationTests is the Junit class that has several test methods for checking all the validation. 
 7. The resource folder in test package has few files which are used as an input to check the logic for checking file name validation.
 
-# I have tried to handle as many scenarios or edge cases possible.
-# As per the document Test_A_07121987.csv passed valdation but the 2 digit sequence number is missing, then it should have failed which has failed in the testcases as per the business logic.
-# Tried with a regex to handle complete file name instead of using Split method but the regex didn't work.
+- I have tried to handle as many scenarios or edge cases possible.
+- As per the document Test_A_07121987.csv passed valdation but the 2 digit sequence number is missing, then it should have failed which has failed in the testcases as per the business logic.
+- Tried with a regex to handle complete file name instead of using Split method but the regex didn't work.
