@@ -2,7 +2,7 @@
 
 1. Clone https://github.com/animesh1d/file-name-validator.git
 2. Checkout master Branch (Don't checkout main)
-3. The service checks the file name validation.
+3. The service checks the file name validation. Its a Spring Boot Application with jdk 11.
 4. FileNameValidatorService is the main class that contains the logic for file name validation check.
 5. FileValidationException is the custom exception class for handling and throwing File Validation exception.
 6. FilenamevalidatorApplicationTests is the Junit class that has several test methods for checking all the validation. Run the FilenamevalidatorApplicationTests for checking the file name validator service.
