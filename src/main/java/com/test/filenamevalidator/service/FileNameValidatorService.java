@@ -1,6 +1,6 @@
 package com.test.filenamevalidator.service;
 
-import com.test.filenamevalidator.service.exception.FileValidationException;
+import com.test.filenamevalidator.exception.FileValidationException;
 import org.springframework.stereotype.Service;
 
 import java.io.File;

@@ -1,14 +1,12 @@
 package com.test.filenamevalidator;
 
 import com.test.filenamevalidator.service.FileNameValidatorService;
-import com.test.filenamevalidator.service.exception.FileValidationException;
+import com.test.filenamevalidator.exception.FileValidationException;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -74,10 +72,17 @@ class FilenamevalidatorApplicationTests {
 	}
 
 	@Test
-	public void testValidateFileNamSeqNumWrongError() {
+	public void testValidateFileNameSeqNumWrongError() {
 		File file = new File("src/test/resources/testfiles/Test_A_07121987_291.csv");
 		Exception exception = assertThrows(FileValidationException.class, () -> fileNameValidatorService.validateFileName(file));
 		assertEquals("File 'Test_A_07121987_291.csv' failed validation\n" +
 				"Sequence number is not a valid two digit sequence number.", exception.getMessage());
+	}
+
+	@Test
+	public void testValidateFileNameCorrectFile() throws FileValidationException {
+		File file = new File("src/test/resources/testfiles/Test_A_07121987_29.csv");
+		String message = fileNameValidatorService.validateFileName(file);
+		assertEquals("File 'Test_A_07121987_29.csv' passed validation", message);
 	}
 }
