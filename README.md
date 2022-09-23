@@ -5,7 +5,8 @@
 3. The service checks the file name validation.
 4. FileNameValidatorService is the main class that contains the logic for file name validation check.
 5. FileValidationException is the custom exception class for handling and throwing File Validation exception.
-6. FilenamevalidatorApplicationTests is the Junit class that has several test methods for checking all the validation. 
+6. FilenamevalidatorApplicationTests is the Junit class that has several test methods for checking all the validation. Run the FilenamevalidatorApplicationTests for checking the file name validator service.
+   You can add more test cases to check for file name validations. 
 7. The resource folder in test package has few files which are used as an input to check the logic for checking file name validation.
 
 - I have tried to handle as many scenarios or edge cases possible.
