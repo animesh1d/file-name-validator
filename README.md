@@ -1,7 +1,7 @@
 # file-name-validator
 
 1. Clone https://github.com/animesh1d/file-name-validator.git
-2. Checkout Mater Branch (Don't checkout main)
+2. Checkout master Branch (Don't checkout main)
 3. The service checks the file name validation.
 4. FileNameValidatorService is the main class that contains the logic for file name validation check.
 5. FileValidationException is the custom exception class for handling and throwing File Validation exception.
